@@ -3,7 +3,7 @@
 </p>
 
 
-This is the official implementation for the accepted miccai2022 paper "Interpretable Graph Neural Networks for Connectome-Based Brain Disorder Analysis". This framework consists of two modules: a brain network-oriented backbone prediction model and a globally shared explanation generator that can highlight disorder-specific biomarkers including salient Regions of Interest (ROIs) and important connections. The whole implementation is built upon [PyTorch](https://pytorch.org) and [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/en/latest/).
+This is the official implementation for the accepted MICCAI 2022 (Oral) paper [Interpretable Graph Neural Networks for Connectome-Based Brain Disorder Analysis](https://arxiv.org/abs/2207.00813). This framework consists of two modules: a brain network-oriented backbone prediction model and a globally shared explanation generator that can highlight disorder-specific biomarkers including salient Regions of Interest (ROIs) and important connections. The whole implementation is built upon [PyTorch](https://pytorch.org) and [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/en/latest/).
 
 ---
 
@@ -79,3 +79,19 @@ Similarly, the `--dataset_name` is the name of the dataset to train the model on
 - PNA
 
 For the other two state-of-the-art deep baselines on brain networks, [BrainNetCNN](https://github.com/Wayfear/FBNETGEN/blob/main/model/model.py) and [BrainGNN](https://github.com/xxlya/BrainGNN_Pytorch), we use the publicly available implementation from their corresponding links.
+
+
+# Citation
+
+Please cite our paper if you find this code useful for your work:
+
+```
+@inproceedings{cui2022interpretable,
+  title={Interpretable Graph Neural Networks for Connectome-Based Brain Disorder Analysis},
+  author={Cui, Hejie and Dai, Wei and Zhu, Yanqiao and Li, Xiaoxiao and He, Lifang and Yang, Carl},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={375--385},
+  year={2022},
+  organization={Springer}
+}
+```
