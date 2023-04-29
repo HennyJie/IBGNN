@@ -6,11 +6,12 @@ class ModifiedArgs(object):
 
         for key in update_dict:
             value = update_dict[key]
-            try:
-                value = int(value)
-            except ValueError:
+            if isinstance(value, str):
                 try:
-                    value = float(value)
+                    value = int(value)
                 except ValueError:
-                    pass
+                    try:
+                        value = float(value)
+                    except ValueError:
+                        pass
             setattr(self, key, value)
